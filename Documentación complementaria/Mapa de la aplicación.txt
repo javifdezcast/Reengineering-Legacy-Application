@@ -1,0 +1,96 @@
+Calificaciones:
+	Modificar(DNI, Nº matrícula, Grupo)
+		[Curso, convocatoria, DNI, nombre y apellidos, P1, P2, P3, P4, Ex, PR, NEvC, EvC]
+		Guardar()
+		Atras()
+		HOME()
+		
+
+	Consultar(DNI, Nº matrícula, grupo, convocatoria)
+		[Curso, convocatoria, DNI, nombre y apellidos, P1, P2, P3, P4, Ex, PR, NEvC, EvC]
+		GenerarCVS()
+			-seleccionar ruta y nombre + gurdar()/cancelar()
+		generarTXT()
+			{Elige: /tab, #, ., :, @, |} aceptar
+			-seleccionar ruta y nombre + gurdar()/cancelar()
+		Aceptar()
+		HOME()
+	
+	HOME()
+	
+	Atrás()
+
+Grupos de Prácticas
+	Dar de alta(cod, DNI1, DNI2, Tutor/a*, Nota)
+		*EscogerTutor()
+			Aceptar()
+			Cancelar()
+		Aceptar()
+		Cancelar()
+		HOME()
+	Dar de baja(cod)
+		buscar() -> problema en realizarConsultaGruposPractica
+		atras()
+		HOME()
+	Modificar(Cod, DNI, Tutor/a*)
+		bucar()
+		*escoger()
+		atras()
+		HOME()
+	Consultar(cod, DNI, Tutor/a*)
+		buscar()
+		*escoger()
+		atras()
+		HOME()
+
+Alumnos  
+	NO FUNCIONA
+
+Profesores
+	Alta(Nombre, apellidos, grupo1, grupo2)
+		aceptar()
+		cancelar()
+		HOME()
+	Baja(Nombre, apellidos, grupo)
+		buscar()
+			[Nombre, apellidos, grupo 1, grupo 2]
+			borrar()
+			cancelar()
+			HOME()
+		atras()
+		HOME()
+	Modificar(nombre, apellidos, grupo)
+		buscar()
+			[Nombre, apellidos, grupo 1, grupo 2]
+			guardar()
+			cancelar()
+			HOME()
+		atras()
+		HOME()
+	Consultar(nombre, apellidos, grupo)
+		buscar()
+			[Nombre, apellidos, grupo 1, grupo 2]
+			generarTXT()
+				{Elige: /tab, #, ., :, @, |} aceptar
+				-seleccionar ruta y nombre + gurdar()/cancelar()
+			aceptar()
+			HOME()
+		atras()
+		HOME()
+	HOME()
+	atras()
+
+Historial de alumnos
+	HOME()
+	Consultar(DNI, curso (año de inicio), convoctoria)
+		[Curso, convocatoria, dni, n mat, nombre, apellidos, teoria , practica, final]
+		generarTXT()
+			{Elige: /tab, #, ., :, @, |} aceptar
+			-seleccionar ruta y nombre + gurdar()/cancelar()
+		HOME()
+		atras()
+	Atras()
+	
+		
+
+
